@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "start": "react-scripts-ts start",
@@ -18,7 +18,7 @@
     "mobx-state-router": "^3.1.2",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "shared": "^1.0.1"
+    "shared": "^1.0.2"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",
