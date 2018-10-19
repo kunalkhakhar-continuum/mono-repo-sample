@@ -11,7 +11,7 @@ export class HomePage extends React.Component<{}, {}> {
 
         return (
             <div>
-                <Header>Home</Header>
+                <Header>Home changed</Header>
                 <div style={styles.content}>Hello World!</div>
             </div>
         );
