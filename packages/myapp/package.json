@@ -1,7 +1,6 @@
 {
-  "name": "myapp",
+  "name": "kunalkhakar-myapp",
   "version": "0.1.3",
-  "private": true,
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
