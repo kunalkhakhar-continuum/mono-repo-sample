@@ -11,7 +11,7 @@ export class HomePage extends React.Component<{}, {}> {
 
         return (
             <div>
-                <Header>Home changed</Header>
+                <Header>Home try --skip-npm</Header>
                 <div style={styles.content}>Hello World!</div>
             </div>
         );
