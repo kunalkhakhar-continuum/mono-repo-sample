@@ -1,7 +1,7 @@
 {
   "name": "kunalkhakar-shared",
   "description": "Shared components",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "author": "Naresh Bhatia",
   "license": "MIT",
   "main": "dist/index.js",
@@ -83,5 +83,6 @@
       }
     },
     "collectCoverage": true
-  }
+  },
+  "gitHead": "06b6058340a7cfce04bea46895fc823da46e8b29"
 }
