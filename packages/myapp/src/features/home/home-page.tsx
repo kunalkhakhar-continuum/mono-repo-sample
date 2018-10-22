@@ -15,6 +15,7 @@ export class HomePage extends React.Component<{}, {}> {
                 <Header>try --skip-git</Header>
                 <Header>try lerna publish with pre-release</Header>
                 <Header>try lerna publish test the version bump after pre-release</Header>
+                <Header>try lerna version command</Header>
                 <div style={styles.content}>Hello World!</div>
             </div>
         );
