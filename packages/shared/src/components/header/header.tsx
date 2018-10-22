@@ -18,6 +18,9 @@ export class Header extends React.Component<HeaderProps> {
                     <Typography variant="title" color="inherit">
                         {children}
                     </Typography>
+                    <Typography variant="title" color="inherit">
+                        {children}
+                    </Typography>
                 </Toolbar>
             </AppBar>
         );
