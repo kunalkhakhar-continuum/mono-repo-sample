@@ -18,7 +18,8 @@
     "build": "lerna exec --scope shared -- tsc",
     "start": "cd packages/myapp && yarn start",
     "format": "prettier --print-width 80 --tab-width 4 --single-quote --write 'packages/*/src/**/{*.js,*.ts*}'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "deploy": "node deploy.js"
   },
   "devDependencies": {
     "del-cli": "^1.1.0",
