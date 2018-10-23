@@ -30,10 +30,11 @@ const checkIfAnyPackageUpdated = (output) => {
     return true;
 }
 
-const isEndofPackageList = (line) => line.contains('lastTagName:');
+const isEndofPackageList = (line) => line.indexOf('lastTagName:') > -1;
 
 const getChangedPackages = (output) => {
     const stdout = output.split('\n').reverse();
+    log('getChangedPackages: ' +stdout);
     let i = 0;
     const packages = [];
     while(!isEndofPackageList(stdout[i])) {
@@ -45,22 +46,31 @@ const getChangedPackages = (output) => {
 }
 
 buildAllPackages = () => {
-    log('building all packages');
+    for (const pkg of Object.keys(updatedPackages)) {
+        const version = updatedPackages[pkg];
+        console.log(pkg);
+        lerna(`--scope ${pkg} run -- npm build:dt`);
+    }
 }
 
 let changedPackages;
 const allManagedPackages = lerna('ls'); // list all managed packages
-log('allManagedPackages');
-log(allManagedPackages);
 
-const output = lerna('changed'); // get only the packages that have updated since last tag
+try {
+    const output = lerna('changed'); // get only the packages that have updated since last tag
+} catch(e) {
+    // lerna throws an error in case there are no changed packages
+    log('there are no changed packages, hence build all packages');
+    buildAllPackages();
+}
 
-// if (checkIfAnyPackageUpdated(output)) {
-//     log(output);
-//     changedPackages = getChangedPackages(output);
-// } else {
-//     log(output);
-// }
+if (checkIfAnyPackageUpdated(output)) {
+    log(output);
+    changedPackages = getChangedPackages(output);
+    log('list of changed packages: '+changedPackages);
+} else {
+    log(output);
+}
 
 // if (changedPackages.length === 0) {
 //     log('No changed packaged are found, will rebuild all packages')
