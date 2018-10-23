@@ -13,12 +13,14 @@ const zip = (destination, source) => {
 
 const isPkg = (tag) => tag.match(/[\w-]+@\d+\.\d+\.\d+(-[\w\d]+)?/);
 
-const updatedPackages = exec('git tag --list --contain HEAD')
-  .split('\n')
-  .filter(isPkg)
-  .map(split('@'))
-  .reduce(zip, {})
-;
+console.log(lerna('updated'));
+
+// const updatedPackages = exec('git tag --list --contain HEAD')
+//   .split('\n')
+//   .filter(isPkg)
+//   .map(split('@'))
+//   .reduce(zip, {})
+// ;
 
 // console.log(`updatedPackages.length: ${JSON.stringify(updatedPackages)}`);
 // for (const pkg of Object.keys(updatedPackages)) {

@@ -1,7 +1,7 @@
 {
   "name": "kunalkhakar-shared",
   "description": "Shared components",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "author": "kunal khakhar",
   "license": "MIT",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts*'",
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
-    "preversion": "node random.js",
+    "preversion": "npm test",
     "build": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
