@@ -12,6 +12,7 @@
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts*'",
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
+    "preversion": "node random.js",
     "build": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
