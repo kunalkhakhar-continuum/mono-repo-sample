@@ -1,6 +1,6 @@
 {
   "name": "kunalkhakar-myapp",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
