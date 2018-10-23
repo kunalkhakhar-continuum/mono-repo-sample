@@ -1,6 +1,6 @@
 {
   "name": "kunalkhakar-myapp",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
@@ -12,12 +12,12 @@
     "@material-ui/icons": "^1.1.0",
     "classnames": "^2.2.5",
     "history": "^4.7.2",
+    "kunalkhakar-shared": "^1.0.3",
     "mobx": "^4.3.1",
     "mobx-react": "^5.2.2",
     "mobx-state-router": "^3.1.2",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "kunalkhakar-shared": "^1.0.3"
+    "react-dom": "^16.4.0"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.3",
