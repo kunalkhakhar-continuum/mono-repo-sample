@@ -4,6 +4,13 @@
     "packages/*"
   ],
   "version": "independent",
+  "useWorkspaces": true,
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "command": {
+    "publish": {
+      "npmClient": "npm",
+      "verifyAccess": false,
+      "registry": "https://registry.npmjs.org"
+    }
+  }
 }
