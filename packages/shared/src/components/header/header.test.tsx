@@ -11,5 +11,5 @@ test('Header renders specified title', () => {
             <Header>React Template</Header>
         </MuiThemeProvider>
     );
-    expect(wrapper.find(Header).text()).toEqual('React Template');
+    expect(wrapper.find(Header).text()).toEqual('React Template sdsd');
 });
