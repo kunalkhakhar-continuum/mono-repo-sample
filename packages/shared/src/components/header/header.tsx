@@ -19,7 +19,7 @@ export class Header extends React.Component<HeaderProps> {
                     <Typography variant="title" color="inherit">
                         
                         <Button variant="outlined" color="primary">
-                            Primary again and again
+                            Primary again and again and again
                         </Button>
                     </Typography>
                 </Toolbar>
