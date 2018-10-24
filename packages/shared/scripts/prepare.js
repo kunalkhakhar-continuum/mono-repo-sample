@@ -7,4 +7,4 @@ const WEBPACK_BIN = path.join(exec('npm bin'), 'webpack');
 console.log(`WEBPACK_BIN: ${WEBPACK_BIN}`);
 //  run: cross-env NODE_ENV=dt webpack --config webpack/webpack.rmm-its-portal.app.config.js --progress --profile --colors 
 // exec(`cross-env NODE_ENV=${NODE_ENV} ${WEBPACK_BIN} --config ../webpack/webpack.config.js --progress --profile --colors`);
-exec(`cross-env NODE_ENV=${NODE_ENV} node ./build_dt_works.js`);
+exec(`node ./build_dt_works.js`);
