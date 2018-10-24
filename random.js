@@ -46,7 +46,7 @@ const getChangedPackages = (output) => {
 const buildPackages = (packages) => {
     packages.forEach(pkg => {
         log(`lerna --scope ${pkg} run -- build:webpack`);
-        lerna(`--scope ${pkg} run -- build:webpack`);
+        lerna(`--scope ${pkg} run build:webpack`);
     });
 }
 
