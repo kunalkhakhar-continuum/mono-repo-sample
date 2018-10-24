@@ -9,6 +9,7 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:run": "jest --watch",
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts*'",
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
