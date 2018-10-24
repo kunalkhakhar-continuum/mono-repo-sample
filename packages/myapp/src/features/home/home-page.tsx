@@ -11,6 +11,7 @@ export class HomePage extends React.Component<{}, {}> {
 
         return (
             <div>
+                <Header>try deploy scripts</Header>
                 <Header>try --skip-npm</Header>
                 <Header>try --skip-git</Header>
                 <Header>try lerna publish with pre-release</Header>
