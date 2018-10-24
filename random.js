@@ -63,7 +63,7 @@ const deployChangedPackages = () => {
         return;
     }
 
-    lerna('publish');
+    lerna('publish --canary --yes');
 }
 
 const buildRemainingPackages = () => {
