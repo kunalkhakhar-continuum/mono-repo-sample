@@ -4,7 +4,7 @@
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "node ./scripts/prepare.js",
-    "prepublishOnly": "node ./scripts/prepare.js",
+    ""prepare":": "node ./scripts/prepare.js",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
     "build:webpack": "node ./scripts/prepare.js"
