@@ -1,6 +1,6 @@
 {
   "name": "kunalkhakar-myapp",
-  "version": "0.1.12",
+  "version": "0.1.13-alpha.9+1251980",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "node ./scripts/prepare.js",
@@ -30,5 +30,6 @@
     "@types/react-dom": "^16.0.5",
     "react-scripts-ts": "2.15.1",
     "typescript": "2.8.4"
-  }
+  },
+  "gitHead": "125198076f1d12c0a428ce1421b0fe33fb8cc838"
 }
