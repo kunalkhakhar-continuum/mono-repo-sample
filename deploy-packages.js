@@ -1,5 +1,7 @@
 module.exports  = function () {
 
+    const getEnv = require('./deploy-utils.js').getEnv
+    const NODE_ENV = getEnv();
     const path = require('path');
     const execSync = require('child_process').execSync;
     const split = (pattern) => (chars) => chars.split(pattern);
