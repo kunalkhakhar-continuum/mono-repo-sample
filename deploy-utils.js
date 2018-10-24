@@ -1,4 +1,4 @@
-let NODE_ENV = production;
+let NODE_ENV = 'production';
 
 const execSync = require('child_process').execSync;
 const log = (message) => {
