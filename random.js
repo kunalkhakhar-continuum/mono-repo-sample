@@ -55,13 +55,15 @@ const deployChangedPackages = () => {
         const output = lerna('changed'); // get only the packages that have updated since last tag
         log(output);
         changedPackages = getChangedPackages(output);
-        lerna('publish');
     } catch(e) {
         // lerna throws an error in case there are no changed packages
         log('there are no changed packages to publish, hence build all packages');
         allPackagesBuilt = true;
         buildPackages(allManagedPackages);
+        return;
     }
+
+    lerna('publish');
 }
 
 const buildRemainingPackages = () => {
