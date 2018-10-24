@@ -1,4 +1,5 @@
 const deployProps = require('./deploy-utils.js')
-deployProps.setEnv('production');
+const setEnv = deployProps.setEnv;
+setEnv('production');
 const deployPackages = require('./deploy-packages.js');
 deployPackages().deploy();
