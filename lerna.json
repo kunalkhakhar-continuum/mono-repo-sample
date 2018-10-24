@@ -9,7 +9,8 @@
   "command": {
     "publish": {
       "npmClient": "npm",
-      "verifyAccess": false
+      "verifyAccess": false,
+      "registry": "https://registry.yarnpkg.com"
     }
   }
 }
