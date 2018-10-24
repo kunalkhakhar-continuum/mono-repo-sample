@@ -1,9 +1,8 @@
 {
-  "name": "react-mobx-mui-ts-monorepo",
+  "name": "kunalakhahar-react-mobx-mui-ts-monorepo",
   "description": "React, MobX, Material-UI monorepo using TypeScript",
   "version": "1.0.0",
   "author": "Naresh Bhatia",
-  "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
