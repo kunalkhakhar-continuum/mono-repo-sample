@@ -18,8 +18,8 @@
     "format": "prettier --print-width 80 --tab-width 4 --single-quote --write 'packages/*/src/**/{*.js,*.ts*}'",
     "precommit": "lint-staged",
     "postinstall": "lerna bootstrap --hoist",
-    "build:dt": "cross-env NODE_ENV=dt node random.js",
-    "build:prod": "cross-env NODE_ENV=production node random.js"
+    "build:dt": "node deploy-dt.js",
+    "build:production": "node deploy-production.js"
   },
   "devDependencies": {
     "del-cli": "^1.1.0",
