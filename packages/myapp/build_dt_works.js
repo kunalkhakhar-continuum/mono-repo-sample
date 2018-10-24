@@ -1,0 +1,1 @@
+console.log('build:dt works in myapp');
