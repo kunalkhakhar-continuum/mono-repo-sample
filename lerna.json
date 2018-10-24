@@ -5,12 +5,12 @@
   ],
   "version": "independent",
   "useWorkspaces": true,
-  "npmClient": "npm",
+  "npmClient": "yarn",
   "command": {
     "publish": {
       "npmClient": "npm",
       "verifyAccess": false,
-      "registry": "https://registry.yarnpkg.com"
+      "registry": "https://registry.npmjs.org"
     }
   }
 }
