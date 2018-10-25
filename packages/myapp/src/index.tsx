@@ -5,6 +5,7 @@ import { configure } from 'mobx';
 import { App } from './app';
 
 // check for process.node.env
+// check for manual increment from git
 configure({ enforceActions: true });
 
 ReactDOM.render(<App />, document.getElementById('root'));
