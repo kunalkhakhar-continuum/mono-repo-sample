@@ -1,6 +1,6 @@
 {
   "name": "kunalkhakar-myapp",
-  "version": "0.2.4-alpha.0",
+  "version": "0.2.4-alpha.1",
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "node ./scripts/prepare.js",
