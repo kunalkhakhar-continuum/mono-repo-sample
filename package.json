@@ -18,7 +18,7 @@
     "format": "prettier --print-width 80 --tab-width 4 --single-quote --write 'packages/*/src/**/{*.js,*.ts*}'",
     "precommit": "lint-staged",
     "postinstall": "lerna bootstrap --hoist",
-    "build:dt": "node deploy-dt.js",
+    "build:dt": "cross-env NODE_ENV=dt node deploy-dt.js",
     "build:production": "node deploy-production.js"
   },
   "devDependencies": {
