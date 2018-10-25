@@ -4,3 +4,4 @@ export { Header } from './header';
 // check with canary again
 // test lerna version
 // test from-git
+// test lerna changed when shared package is updated
