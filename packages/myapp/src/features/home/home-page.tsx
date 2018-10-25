@@ -18,6 +18,7 @@ export class HomePage extends React.Component<{}, {}> {
                 <Header>try lerna publish test the version bump after pre-release</Header>
                 <Header>try lerna version command</Header>
                 <Header>check remaining packges build</Header>
+                <Header>check lerna changed once all the versions are non-prerelease</Header>
                 <div style={styles.content}>Hello World!</div>
                 <div style={styles.content}>Hello World! again</div>
             </div>
