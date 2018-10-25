@@ -5,3 +5,4 @@ export { Header } from './header';
 // test lerna version
 // test from-git
 // test lerna changed when shared package is updated
+// test lerna version --prerelease and then lerna publish with -- from-git --yes --no-git-tag-version

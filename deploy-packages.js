@@ -60,7 +60,9 @@ module.exports  = function () {
             const output = lerna('changed'); // get only the packages that have updated since last tag
             log(output);
             changedPackages = getChangedPackages(output);
-            lerna('publish prerelease from-git --yes --no-git-tag-version ');
+            lerna('version prerelease --yes');
+            // lerna('publish prerelease from-git --yes --no-git-tag-version ');
+            lerna('publish from-git --yes --no-git-tag-version ');
             buildRemainingPackages();
         } catch(e) {
             // lerna throws an error in case there are no changed packages
