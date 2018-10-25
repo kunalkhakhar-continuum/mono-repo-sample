@@ -10,3 +10,5 @@ import { App } from './app';
 configure({ enforceActions: true });
 
 ReactDOM.render(<App />, document.getElementById('root'));
+
+// test: lerna changed when only leaf package is updated after shared package is already published
