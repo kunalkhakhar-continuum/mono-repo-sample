@@ -1,7 +1,7 @@
 {
   "name": "kunalkhakar-shared",
   "description": "Shared components",
-  "version": "2.0.13-alpha.14",
+  "version": "2.0.14",
   "author": "kunal khakhar",
   "license": "MIT",
   "main": "dist/index.js",
@@ -87,5 +87,5 @@
     },
     "collectCoverage": true
   },
-  "gitHead": "768441de53a190509a7a3e1892063ee4798ed0a2"
+  "gitHead": "76c93ff0961c0ea8b741db38827c8a9f70694253"
 }
