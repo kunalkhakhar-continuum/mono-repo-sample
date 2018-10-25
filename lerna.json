@@ -5,12 +5,17 @@
   ],
   "version": "independent",
   "useWorkspaces": true,
-  "npmClient": "yarn",
+  "npmClient": "npm",
   "command": {
     "publish": {
       "npmClient": "npm",
       "verifyAccess": false,
       "registry": "https://registry.npmjs.org"
     }
-  }
+  },
+  "ignoreChanges": [
+    "**/__fixtures__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ]
 }
