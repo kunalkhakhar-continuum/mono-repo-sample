@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 import { configure } from 'mobx';
 import { App } from './app';
 
-// Enable strict mode for MobX. This disallows state changes 
+// Enable strict mode for MobX. This disallows state changes check for process.env variable
 configure({ enforceActions: true });
 
 ReactDOM.render(<App />, document.getElementById('root'));
