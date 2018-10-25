@@ -14,7 +14,7 @@
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
     "preversion": "npm test",
-    "prepublishOnly": "node ./scripts/prepare.js",
+    "postversion": "node ./scripts/prepare.js",
     "build": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
