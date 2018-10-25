@@ -1,7 +1,7 @@
 {
   "name": "kunalkhakar-shared",
   "description": "Shared components",
-  "version": "2.0.13-alpha.2+5424596",
+  "version": "2.1.0",
   "author": "kunal khakhar",
   "license": "MIT",
   "main": "dist/index.js",
