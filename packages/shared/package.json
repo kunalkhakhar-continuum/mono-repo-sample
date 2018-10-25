@@ -14,7 +14,7 @@
     "del-dist": "del-cli dist",
     "prebuild": "yarn del-dist",
     "preversion": "npm test",
-    "postversion": "npm run build:webpack",
+    "postversion": "npm test",
     "build": "tsc",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
