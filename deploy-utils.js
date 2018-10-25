@@ -14,7 +14,7 @@ const setEnv = (env) => {
 }
 
 const getEnv = () => {
-    return NODE_ENV;
+    return process.env.NODE_ENV;
 }
 
 module.exports = {

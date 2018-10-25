@@ -1,6 +1,6 @@
 const path = require('path');
 const getEnv = require('../../../deploy-utils.js').getEnv;
-const NODE_ENV = process.env.NODE_ENV;
+const NODE_ENV = getEnv();
 const exec = require('../../../deploy-utils.js').exec;
 console.log(`current env in prepare: ${NODE_ENV}`)
 const WEBPACK_BIN = path.join(exec('npm bin'), 'webpack');
