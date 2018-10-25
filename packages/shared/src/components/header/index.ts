@@ -3,3 +3,4 @@ export { Header } from './header';
 // check branch is behind before lerna publish
 // check with canary again
 // test lerna version
+// test from-git
