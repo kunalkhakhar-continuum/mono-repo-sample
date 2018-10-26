@@ -1,6 +1,9 @@
+const chalk = require('chalk');
+const log = console.log;
+
 module.exports  = function () {
 
-    const getEnv = require('./deploy-utils.js').getEnv
+    const { getEnv, getBuiltPackages, addBuiltPackage } = require('./deploy-utils.js')
     const NODE_ENV = getEnv();
     const path = require('path');
     const execSync = require('child_process').execSync;
@@ -60,15 +63,16 @@ module.exports  = function () {
             const output = lerna('changed'); // get only the packages that have updated since last tag
             log(output);
             changedPackages = getChangedPackages(output);
-            lerna('version prerelease --yes');
+            // lerna('version prerelease --yes');
             // lerna('publish prerelease from-git --yes --no-git-tag-version ');
-            lerna('publish from-git --yes --no-git-tag-version ');
+            // lerna('publish from-git --yes --no-git-tag-version ');
             buildRemainingPackages();
         } catch(e) {
             // lerna throws an error in case there are no changed packages
             log('there are no changed packages to publish, hence build all packages');
             allPackagesBuilt = true;
             buildPackages(allManagedPackages);
+            log(chalk.red(`deployPackages: ${getBuiltPackages()}`));
             return;
         }
     }
