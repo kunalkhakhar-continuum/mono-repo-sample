@@ -54,8 +54,8 @@ module.exports  = function () {
     }
 
     const buildRemainingPackages = () => {
-        const packages = allManagedPackages.filter(item => changedPackages.indexOf(item) === -1)
-        buildPackages(packages);
+        // const packages = allManagedPackages.filter(item => changedPackages.indexOf(item) === -1)
+        buildPackages(allManagedPackages);
     }
 
     const deployPackages = () => {
