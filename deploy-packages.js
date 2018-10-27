@@ -64,7 +64,7 @@ module.exports  = function () {
             log(output);
             changedPackages = getChangedPackages(output);
             // lerna('version prerelease --yes');
-            // lerna('publish prerelease from-git --yes --no-git-tag-version ');
+            lerna('publish prerelease from-git --yes ');
             // lerna('publish from-git --yes --no-git-tag-version ');
             buildRemainingPackages();
         } catch(e) {
