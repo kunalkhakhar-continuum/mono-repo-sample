@@ -66,7 +66,7 @@ module.exports  = function () {
             // lerna('version prerelease --yes');
             lerna('publish prerelease from-git --yes ');
             // lerna('publish from-git --yes --no-git-tag-version ');
-            buildRemainingPackages();
+            // buildRemainingPackages();
         } catch(e) {
             // lerna throws an error in case there are no changed packages
             log('there are no changed packages to publish, hence build all packages');
